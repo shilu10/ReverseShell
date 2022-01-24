@@ -1,4 +1,53 @@
 # ReverseShell
-This project is usually for Hacking Purpose , but it can be used for many other good purposes.This is the way that hacker will try to run their malware,backdoor,bonet in your computer,laptops .Because this will able to easily bypass the Statefull Firewall which is modern Firewall 
-Statefull Firewall wont work based on the IP ADDRESS like old firewalls .Checlout the below link to understand more about stateful firewall
-https://www.google.com/url?sa=t&rct=j&q=&esrc=s&source=web&cd=&cad=rja&uact=8&ved=2ahUKEwjZ4I6WopP1AhXrTmwGHdadC60QFnoECAUQAQ&url=https%3A%2F%2Fen.wikipedia.org%2Fwiki%2FStateful_firewall&usg=AOvVaw3szqCpumse45CRz3WDvpsD
+
+## Table of contents
+
+* [General info](#general-info)
+* [Technologies](#technologies)
+* [Installation](#Installation)
+* [Setup](#setup)
+
+
+## General info
+This project is based on the concept of Backdoor. Backdoor is a malicious file used by the hacker to hack the Windows Desktop particularly. These files are not sensitive or it won't caught in stateless firewall.This File is coded based on getting the connection from the victim.So in the stateless firewall allows the connection from that p.c
+
+## Technologies
+Project is created with:
+* Python 3.9.2
+* json
+* base64
+* csv
+* re
+* argparse
+* socket
+* sys
+* subprocess
+
+
+## Installation
+
+```bash
+pip install base64
+```
+
+```bash
+pip install argparse
+```
+```bash
+pip install requests
+```
+
+## Setup
+To run this project,clone this repository in your machine:
+
+* Make sure to have a Python installed 
+
+```
+$ cd ../AmazonElectronicScraper
+$ python3 run.py -p 1 -f "amazon.csv" -s "laptop"
+$ python3 run.py -h 
+```
+* python3 run.py -h - To see the description and to get the help
+* -f argument - It is used to specify the filename .Where you like to save the result.Please make sure to use the csv extension.
+* -s argument - It is used to specify a search keyword .Like mobile phones, Latpops
+* -p argument -It is used to speicfy , how many page you need to extract.
